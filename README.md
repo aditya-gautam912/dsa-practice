@@ -16,4 +16,5 @@ problems/<number>_<problem_name>/
 
 | # | Title | Difficulty | Solution |
 |---|-------|-----------|----------|
-| 3 | [Longest Substring Without Repeating Characters](problems/0003_longest_substring_without_repeating_characters/) | Medium | [Python](problems/0003_longest_substring_without_repeating_characters/solution.py) |
+| 1 | [Two Sum](problems/0001_two_sum/) | Easy | [Python](problems/0001_two_sum/solution_two_sum.py) |
+| 3 | [Longest Substring Without Repeating Characters](problems/0003_longest_substring_without_repeating_characters/) | Medium | [Python](problems/0003_longest_substring_without_repeating_characters/solution_longest_substring.py) |

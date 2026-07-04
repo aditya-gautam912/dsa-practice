@@ -1,5 +1,5 @@
 import pytest
-from solution import Solution
+from solution_longest_substring import Solution
 
 
 @pytest.fixture
