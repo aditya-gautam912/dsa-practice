@@ -20,3 +20,4 @@ problems/<number>_<problem_name>/
 | 11 | [Container With Most Water](problems/0011_container_with_most_water/) | Medium | [Python](problems/0011_container_with_most_water/solution_container_with_most_water.py) |
 | 15 | [3Sum](problems/0015_3sum/) | Medium | [Python](problems/0015_3sum/solution_3sum.py) |
 | 16 | [3Sum Closest](problems/0016_3sum_closest/) | Medium | [Python](problems/0016_3sum_closest/solution_3sum_closest.py) |
+| 26 | [Remove Duplicates from Sorted Array](problems/0026_remove_duplicates_from_sorted_array/) | Easy | [Python](problems/0026_remove_duplicates_from_sorted_array/solution_remove_duplicates.py) |
