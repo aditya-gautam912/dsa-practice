@@ -22,3 +22,4 @@ problems/<number>_<problem_name>/
 | 16 | [3Sum Closest](problems/0016_3sum_closest/) | Medium | [Python](problems/0016_3sum_closest/solution_3sum_closest.py) |
 | 26 | [Remove Duplicates from Sorted Array](problems/0026_remove_duplicates_from_sorted_array/) | Easy | [Python](problems/0026_remove_duplicates_from_sorted_array/solution_remove_duplicates.py) |
 | 27 | [Remove Element](problems/0027_remove_element/) | Easy | [Python](problems/0027_remove_element/solution_remove_element.py) |
+| 31 | [Next Permutation](problems/0031_next_permutation/) | Medium | [Python](problems/0031_next_permutation/solution_next_permutation.py) |
