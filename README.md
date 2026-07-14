@@ -24,3 +24,4 @@ problems/<number>_<problem_name>/
 | 27 | [Remove Element](problems/0027_remove_element/) | Easy | [Python](problems/0027_remove_element/solution_remove_element.py) |
 | 31 | [Next Permutation](problems/0031_next_permutation/) | Medium | [Python](problems/0031_next_permutation/solution_next_permutation.py) |
 | 33 | [Search in Rotated Sorted Array](problems/0033_search_in_rotated_sorted_array/) | Medium | [Python](problems/0033_search_in_rotated_sorted_array/solution_search_rotated.py) |
+| 34 | [Find First and Last Position of Element in Sorted Array](problems/0034_find_first_and_last_position_of_element_in_sorted_array/) | Medium | [Python](problems/0034_find_first_and_last_position_of_element_in_sorted_array/solution_find_first_last.py) |
