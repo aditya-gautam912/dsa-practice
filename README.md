@@ -6,10 +6,8 @@ LeetCode Data Structures & Algorithms solutions in Python.
 
 ```
 problems/<number>_<problem_name>/
-├── problem.md        # Problem statement
 ├── solution.py       # Solution code
-├── test_solution.py  # Unit tests
-└── explanation.md    # Approach & complexity analysis
+└── test_solution.py  # Unit tests
 ```
 
 ## Problems
