@@ -28,3 +28,4 @@ problems/<number>_<problem_name>/
 | 34 | [Find First and Last Position of Element in Sorted Array](problems/0034_find_first_and_last_position_of_element_in_sorted_array/) | Medium | [Python](problems/0034_find_first_and_last_position_of_element_in_sorted_array/solution_find_first_last.py) |
 | 35 | [Search Insert Position](problems/0035_search_insert_position/) | Easy | [Python](problems/0035_search_insert_position/solution_search_insert.py) |
 | 41 | [First Missing Positive](problems/0041_first_missing_positive/) | Hard | [Python](problems/0041_first_missing_positive/solution_first_missing_positive.py) |
+| 42 | [Trapping Rain Water](problems/0042_trapping_rain_water/) | Hard | [Python](problems/0042_trapping_rain_water/solution_trapping_rain_water.py) |
