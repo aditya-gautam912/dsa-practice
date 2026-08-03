@@ -29,3 +29,4 @@ problems/<number>_<problem_name>/
 | 35 | [Search Insert Position](problems/0035_search_insert_position/) | Easy | [Python](problems/0035_search_insert_position/solution_search_insert.py) |
 | 41 | [First Missing Positive](problems/0041_first_missing_positive/) | Hard | [Python](problems/0041_first_missing_positive/solution_first_missing_positive.py) |
 | 42 | [Trapping Rain Water](problems/0042_trapping_rain_water/) | Hard | [Python](problems/0042_trapping_rain_water/solution_trapping_rain_water.py) |
+| 48 | [Rotate Image](problems/0048_rotate_image/) | Medium | [Python](problems/0048_rotate_image/solution_rotate_image.py) |
