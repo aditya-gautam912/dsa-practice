@@ -31,3 +31,4 @@ problems/<number>_<problem_name>/
 | 42 | [Trapping Rain Water](problems/0042_trapping_rain_water/) | Hard | [Python](problems/0042_trapping_rain_water/solution_trapping_rain_water.py) |
 | 48 | [Rotate Image](problems/0048_rotate_image/) | Medium | [Python](problems/0048_rotate_image/solution_rotate_image.py) |
 | 49 | [Group Anagrams](problems/0049_group_anagrams/) | Medium | [Python](problems/0049_group_anagrams/solution_group_anagrams.py) |
+| 53 | [Maximum Subarray](problems/0053_maximum_subarray/) | Easy | [Python](problems/0053_maximum_subarray/solution_maximum_subarray.py) |
