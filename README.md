@@ -32,3 +32,4 @@ problems/<number>_<problem_name>/
 | 48 | [Rotate Image](problems/0048_rotate_image/) | Medium | [Python](problems/0048_rotate_image/solution_rotate_image.py) |
 | 49 | [Group Anagrams](problems/0049_group_anagrams/) | Medium | [Python](problems/0049_group_anagrams/solution_group_anagrams.py) |
 | 53 | [Maximum Subarray](problems/0053_maximum_subarray/) | Easy | [Python](problems/0053_maximum_subarray/solution_maximum_subarray.py) |
+| 56 | [Merge Intervals](problems/0056_merge_intervals/) | Medium | [Python](problems/0056_merge_intervals/solution_merge_intervals.py) |
