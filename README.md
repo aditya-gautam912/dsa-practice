@@ -33,3 +33,4 @@ problems/<number>_<problem_name>/
 | 49 | [Group Anagrams](problems/0049_group_anagrams/) | Medium | [Python](problems/0049_group_anagrams/solution_group_anagrams.py) |
 | 53 | [Maximum Subarray](problems/0053_maximum_subarray/) | Easy | [Python](problems/0053_maximum_subarray/solution_maximum_subarray.py) |
 | 56 | [Merge Intervals](problems/0056_merge_intervals/) | Medium | [Python](problems/0056_merge_intervals/solution_merge_intervals.py) |
+| 66 | [Plus One](problems/0066_plus_one/) | Easy | [Python](problems/0066_plus_one/solution_plus_one.py) |
