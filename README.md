@@ -34,3 +34,4 @@ problems/<number>_<problem_name>/
 | 53 | [Maximum Subarray](problems/0053_maximum_subarray/) | Easy | Array | [Python](problems/0053_maximum_subarray/solution_maximum_subarray.py) |
 | 56 | [Merge Intervals](problems/0056_merge_intervals/) | Medium | Array | [Python](problems/0056_merge_intervals/solution_merge_intervals.py) |
 | 66 | [Plus One](problems/0066_plus_one/) | Easy | Array | [Python](problems/0066_plus_one/solution_plus_one.py) |
+| 73 | [Set Matrix Zeroes](problems/0073_set_matrix_zeroes/) | Medium | Array | [Python](problems/0073_set_matrix_zeroes/solution_set_matrix_zeroes.py) |
