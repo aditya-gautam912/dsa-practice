@@ -1,7 +1,8 @@
 __pycache__/
 *.py[cod]
-*$py.class
 *.egg-info/
 .env
 venv/
 env/
+*.exe
+*.out
