@@ -1,38 +1,36 @@
 /*
- * LeetCode #35: Search Insert Position
- * Difficulty: Easy
+ * Search Insert Position (LeetCode #35, Easy)
  *
- * Human approach:
- * Plain binary search. When the target exists we return its index.
- * When it does not exist, the left pointer naturally lands exactly where
- * the target should be inserted, so we return that value.
+ * Yet another binary search. Handy property: when the target
+ * doesn't exist, "lo" ends up exactly at the insertion spot.
+ * So there's nothing special to handle - just return lo.
  */
 
 #include <stdio.h>
 
-/* LeetCode solution. */
 int searchInsert(int *nums, int numsSize, int target)
 {
-    int low = 0, high = numsSize - 1;
+    int lo = 0, hi = numsSize - 1;
 
-    while (low <= high)
+    while (lo <= hi)
     {
-        int mid = (low + high) / 2;
+        int mid = (lo + hi) / 2;
         if (nums[mid] == target)
             return mid;
         if (nums[mid] < target)
-            low = mid + 1;
+            lo = mid + 1;
         else
-            high = mid - 1;
+            hi = mid - 1;
     }
-    return low;
+    return lo;
 }
 
 int main(void)
 {
     int n[] = {1, 3, 5, 6};
-    printf("Test 1: %d\n", searchInsert(n, 4, 5)); /* 2 */
-    printf("Test 2: %d\n", searchInsert(n, 4, 2)); /* 1 */
-    printf("Test 3: %d\n", searchInsert(n, 4, 7)); /* 4 */
+
+    printf("%d\n", searchInsert(n, 4, 5)); /* 2 */
+    printf("%d\n", searchInsert(n, 4, 2)); /* 1 */
+    printf("%d\n", searchInsert(n, 4, 7)); /* 4 */
     return 0;
 }
