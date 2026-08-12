@@ -1,43 +1,41 @@
 /*
- * LeetCode #42: Trapping Rain Water
- * Difficulty: Hard
+ * Trapping Rain Water (LeetCode #42, Hard)
  *
- * Human approach:
- * Water collects where a dip is enclosed by taller walls. Move two
- * pointers from the two ends inward. Whichever side has the lower wall is
- * the one that decides water height, so we always move the shorter side
- * and add the water collected above it.
+ * Water sits in dips. At each position the water level is decided
+ * by the shorter of the two tallest walls beside it. Move the two
+ * pointers inward from the ends; the side with the shorter wall is
+ * always the safe one to compute on. This avoids arrays of
+ * left-max and right-max entirely - one pass, constant memory.
  */
 
 #include <stdio.h>
 
-/* LeetCode solution. */
 int trap(int *height, int heightSize)
 {
-    int left = 0, right = heightSize - 1;
-    int leftMax = 0, rightMax = 0;
-    int total = 0;
+    int lo = 0, hi = heightSize - 1;
+    int loMax = 0, hiMax = 0;
+    int water = 0;
 
-    while (left < right)
+    while (lo < hi)
     {
-        if (height[left] < height[right])
+        if (height[lo] < height[hi])
         {
-            if (height[left] >= leftMax)
-                leftMax = height[left];
+            if (height[lo] >= loMax)
+                loMax = height[lo];
             else
-                total += leftMax - height[left];
-            left++;
+                water += loMax - height[lo];
+            lo++;
         }
         else
         {
-            if (height[right] >= rightMax)
-                rightMax = height[right];
+            if (height[hi] >= hiMax)
+                hiMax = height[hi];
             else
-                total += rightMax - height[right];
-            right--;
+                water += hiMax - height[hi];
+            hi--;
         }
     }
-    return total;
+    return water;
 }
 
 int main(void)
@@ -45,7 +43,7 @@ int main(void)
     int h1[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
     int h2[] = {4, 2, 0, 3, 2, 5};
 
-    printf("Test 1: %d\n", trap(h1, 12)); /* 6 */
-    printf("Test 2: %d\n", trap(h2, 6));  /* 9 */
+    printf("%d\n", trap(h1, 12)); /* 6 */
+    printf("%d\n", trap(h2, 6));  /* 9 */
     return 0;
 }
