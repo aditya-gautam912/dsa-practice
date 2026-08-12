@@ -1,15 +1,13 @@
 /*
- * LeetCode #31: Next Permutation
- * Difficulty: Medium
+ * Next Permutation (LeetCode #31, Medium)
  *
- * Human approach:
- * Imagine the numbers as digits of a word. To get the next bigger "word":
- * 1. Walk from the right and find the first spot where the number dips
- *    (the right side is bigger than where we are).
- * 2. Swap that number with the smallest number bigger than it on the right.
- * 3. Flip (reverse) everything to the right so it becomes the smallest
- *    possible order.
- * If the whole array is already descending, just reverse all of it.
+ * Honestly the first time I saw this I had no idea. The epiphany:
+ * the "next" permutation is about finding the rightmost dip.
+ * Walk from the end while the numbers rise; that rising tail is
+ * already the biggest arrangement of those digits. Then the next
+ * bigger number has to bump the element before the dip, and the
+ * tail gets sorted ascending after the swap.
+ * If there is no dip, the whole array is descending - flip it.
  */
 
 #include <stdio.h>
@@ -21,26 +19,23 @@ static void swap(int *a, int *b)
     *b = t;
 }
 
-static void reverse(int *arr, int left, int right)
+static void reverse(int *arr, int lo, int hi)
 {
-    while (left < right)
-    {
-        swap(&arr[left], &arr[right]);
-        left++;
-        right--;
-    }
+    while (lo < hi)
+        swap(&arr[lo++], &arr[hi--]);
 }
 
-/* LeetCode solution. Modifies the array in place. */
 void nextPermutation(int *nums, int numsSize)
 {
     int i = numsSize - 2;
 
+    /* find the dip */
     while (i >= 0 && nums[i] >= nums[i + 1])
         i--;
 
     if (i >= 0)
     {
+        /* smallest element bigger than nums[i], scanning from the right */
         int j = numsSize - 1;
         while (nums[j] <= nums[i])
             j--;
@@ -59,20 +54,15 @@ static void printArr(int *arr, int n)
 
 int main(void)
 {
-    int a[] = {1, 2, 3};
-    int b[] = {3, 2, 1};
-    int c[] = {1, 1, 5};
+    int a[] = {1, 2, 3}; /* -> 1 3 2 */
+    int b[] = {3, 2, 1}; /* -> 1 2 3 */
+    int c[] = {1, 1, 5}; /* -> 1 5 1 */
 
     nextPermutation(a, 3);
-    printf("Test 1: ");
     printArr(a, 3);
-
     nextPermutation(b, 3);
-    printf("Test 2: ");
     printArr(b, 3);
-
     nextPermutation(c, 3);
-    printf("Test 3: ");
     printArr(c, 3);
 
     return 0;
