@@ -1,18 +1,14 @@
 /*
- * LeetCode #66: Plus One
- * Difficulty: Easy
+ * Plus One (LeetCode #66, Easy)
  *
- * Human approach:
- * Work from the last digit. If it is below 9, just add one and we are
- * done. If it is 9, it becomes 0 and we carry the 1 to the next digit.
- * If every digit was 9, we need a new leading 1 and all other digits 0.
+ * Walk from the units digit. Below 9? Add one and we're done.
+ * It's a 9: becomes 0, carry the 1 left. Only gotcha is when the
+ * whole number is 9s - then we need one extra slot up front.
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-/* LeetCode solution.
- * Returns a freshly allocated array. *returnSize gives its length. */
 int *plusOne(int *digits, int digitsSize, int *returnSize)
 {
     for (int i = digitsSize - 1; i >= 0; i--)
@@ -42,29 +38,28 @@ int main(void)
     int n1[] = {1, 2, 3};
     int n2[] = {9};
     int n3[] = {9, 9, 9};
-    int retSize;
-    int *res;
+    int n, *out;
 
-    res = plusOne(n1, 3, &retSize);
-    printf("Test 1: ");
-    for (int i = 0; i < retSize; i++)
-        printf("%d", res[i]);
-    printf("\n");
-    free(res);
+    out = plusOne(n1, 3, &n);
+    printf("got: ");
+    for (int i = 0; i < n; i++)
+        printf("%d", out[i]);
+    printf(" (want 124)\n");
+    free(out);
 
-    res = plusOne(n2, 1, &retSize);
-    printf("Test 2: ");
-    for (int i = 0; i < retSize; i++)
-        printf("%d", res[i]);
-    printf("\n");
-    free(res);
+    out = plusOne(n2, 1, &n);
+    printf("got: ");
+    for (int i = 0; i < n; i++)
+        printf("%d", out[i]);
+    printf(" (want 10)\n");
+    free(out);
 
-    res = plusOne(n3, 3, &retSize);
-    printf("Test 3: ");
-    for (int i = 0; i < retSize; i++)
-        printf("%d", res[i]);
-    printf("\n");
-    free(res);
+    out = plusOne(n3, 3, &n);
+    printf("got: ");
+    for (int i = 0; i < n; i++)
+        printf("%d", out[i]);
+    printf(" (want 1000)\n");
+    free(out);
 
     return 0;
 }
