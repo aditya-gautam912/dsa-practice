@@ -1,28 +1,19 @@
 /*
- * LeetCode #1: Two Sum
- * Difficulty: Easy
+ * Two Sum (LeetCode #1, Easy)
  *
- * Human approach:
- * We need to find two numbers that add up to target.
- * Think of it like this: for each number, we ask "does the
- * number we need (target - current) already exist?".
- * Instead of scanning again for every number (slow), we
- * remember each number and its position as we go. That way
- * the answer is found in one quick pass.
+ * Classic one. First one I ever solved properly.
+ * Brute force is O(n^2) — for every pair just add and compare.
+ * The hash map idea is what everyone wants: walk through the array
+ * once, and for each number ask "do I already have (target - this)?".
+ * If yes, we're done. Otherwise remember this number's index.
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * LeetCode solution:
- * Returns an array of 2 indices whose values add up to target.
- * *returnSize must be set to 2.
- */
 int *twoSum(int *nums, int numsSize, int target, int *returnSize)
 {
-    /* MAP: we store previously seen values in two arrays
-       (a poor-man's hash map for demonstration simplicity). */
+    /* keep it simple: store what we've seen so far */
     int *seenVals = (int *)malloc(numsSize * sizeof(int));
     int *seenIdx = (int *)malloc(numsSize * sizeof(int));
     int seenCount = 0;
@@ -33,6 +24,7 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize)
     for (int i = 0; i < numsSize; i++)
     {
         int complement = target - nums[i];
+        /* linear scan into our little map - n is small, fine for demo */
         for (int j = 0; j < seenCount; j++)
         {
             if (seenVals[j] == complement)
@@ -56,7 +48,6 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize)
     return NULL;
 }
 
-/* Simple manual test harness (human-style verification) */
 int main(void)
 {
     int nums1[] = {2, 7, 11, 15};
@@ -67,17 +58,17 @@ int main(void)
 
     res = twoSum(nums1, 4, 9, &retSize);
     if (retSize == 2)
-        printf("Test 1: [%d, %d]\n", res[0], res[1]);
+        printf("{%d, %d}\n", res[0], res[1]); /* expect {0,1} */
     free(res);
 
     res = twoSum(nums2, 3, 6, &retSize);
     if (retSize == 2)
-        printf("Test 2: [%d, %d]\n", res[0], res[1]);
+        printf("{%d, %d}\n", res[0], res[1]); /* expect {1,2} */
     free(res);
 
     res = twoSum(nums3, 2, 6, &retSize);
     if (retSize == 2)
-        printf("Test 3: [%d, %d]\n", res[0], res[1]);
+        printf("{%d, %d}\n", res[0], res[1]); /* expect {0,1} */
     free(res);
 
     return 0;
