@@ -1,17 +1,19 @@
 /*
- * LeetCode #73: Set Matrix Zeroes
- * Difficulty: Medium
+ * Set Matrix Zeroes (LeetCode #73, Medium)
  *
- * Human approach:
- * When a cell is zero, its whole row and column must become zero. Instead
- * of remembering every zero cell (wasting memory), we mark the first cell
- * of that row and the first cell of that column. Before we overwrite them,
- * we save whether the first row / first column themselves had a zero.
+ * The trick the problem pushes you toward: don't scan the whole
+ * matrix for zeroes after the fact - instead use the first row and
+ * first column as "remember here" flags. But they're part of the
+ * matrix, so save whether they had a zero before you flag them.
+ *
+ * I honestly usually write the two-array version first, then the
+ * interviewer asks "can you do it in O(1) space" and I swap in
+ * this. Good party trick for interviews.
  */
 
 #include <stdio.h>
 
-static void setZeroes(int *matrix, int m, int n)
+void setZeroes(int *matrix, int m, int n)
 {
     int firstRow = 0, firstCol = 0;
 
@@ -28,6 +30,7 @@ static void setZeroes(int *matrix, int m, int n)
             break;
         }
 
+    /* use first row/col as the zero-flag storage */
     for (int i = 1; i < m; i++)
         for (int j = 1; j < n; j++)
             if (matrix[i * n + j] == 0)
@@ -50,7 +53,7 @@ static void setZeroes(int *matrix, int m, int n)
             matrix[i * n + 0] = 0;
 }
 
-static void printMatrix(int *m, int rows, int cols)
+static void printM(int *m, int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
     {
@@ -64,13 +67,11 @@ int main(void)
 {
     int m1[9] = {1, 1, 1, 1, 0, 1, 1, 1, 1};
     setZeroes(m1, 3, 3);
-    printf("Test 1:\n");
-    printMatrix(m1, 3, 3);
+    printM(m1, 3, 3);
 
     int m2[12] = {0, 1, 2, 0, 3, 4, 5, 2, 1, 3, 1, 5};
     setZeroes(m2, 3, 4);
-    printf("Test 2:\n");
-    printMatrix(m2, 3, 4);
+    printM(m2, 3, 4);
 
     return 0;
 }
