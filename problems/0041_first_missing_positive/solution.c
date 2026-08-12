@@ -1,13 +1,12 @@
 /*
- * LeetCode #41: First Missing Positive
- * Difficulty: Hard
+ * First Missing Positive (LeetCode #41, Hard)
  *
- * Human approach:
- * We want the smallest positive number that is missing. If 1 is present,
- * place it at index 0; if 2 is present, put it at index 1 and so on.
- * This "sorting in place" puts every number x (between 1 and n) at index
- * x-1. After that, the first spot where our number does not match gives
- * the answer.
+ * The "aha" here: for a positive x in 1..n, its home is index x-1.
+ * We shuffle numbers into their homes with swaps. After that the
+ * array is scrambled but the first index where nums[i] != i+1
+ * tells us exactly which positive is missing. O(n) time while
+ * doing it with zero extra memory. Took me a while to trust swaps
+ * instead of worrying about temporary values.
  */
 
 #include <stdio.h>
@@ -19,11 +18,11 @@ static void swap(int *a, int *b)
     *b = t;
 }
 
-/* LeetCode solution. */
 int firstMissingPositive(int *nums, int numsSize)
 {
     for (int i = 0; i < numsSize; i++)
     {
+        /* keep swapping until the number is home, out of range, or dup */
         while (nums[i] >= 1 && nums[i] <= numsSize &&
                nums[nums[i] - 1] != nums[i])
         {
@@ -32,10 +31,9 @@ int firstMissingPositive(int *nums, int numsSize)
     }
 
     for (int i = 0; i < numsSize; i++)
-    {
         if (nums[i] != i + 1)
             return i + 1;
-    }
+
     return numsSize + 1;
 }
 
@@ -45,8 +43,8 @@ int main(void)
     int n2[] = {3, 4, -1, 1};
     int n3[] = {7, 8, 9, 11, 12};
 
-    printf("Test 1: %d\n", firstMissingPositive(n1, 3));   /* 3 */
-    printf("Test 2: %d\n", firstMissingPositive(n2, 4));   /* 2 */
-    printf("Test 3: %d\n", firstMissingPositive(n3, 5));   /* 1 */
+    printf("%d\n", firstMissingPositive(n1, 3)); /* 3 */
+    printf("%d\n", firstMissingPositive(n2, 4)); /* 2 */
+    printf("%d\n", firstMissingPositive(n3, 5)); /* 1 */
     return 0;
 }
