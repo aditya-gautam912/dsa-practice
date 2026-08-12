@@ -1,12 +1,10 @@
 /*
- * LeetCode #49: Group Anagrams
- * Difficulty: Medium
+ * Group Anagrams (LeetCode #49, Medium)
  *
- * Human approach:
- * Anagrams are words made of the same letters. If we sort the letters of
- * every word, all anagrams look the same. So we sort each word, and use
- * that sorted word as a "label". Words sharing a label belong to the same
- * group. We put each word next to its label and print groups at the end.
+ * Anagrams = same letters, different order. So sort the letters of
+ * every word and anagrams collapse to the same "signature". Bucket
+ * words by signature and print the buckets. Simple, and it was my
+ * intro to "hash by canonical form".
  */
 
 #include <stdio.h>
@@ -14,59 +12,52 @@
 #include <string.h>
 
 #define MAX 104
-#define MAXGROUP 104
 
 static int cmpChar(const void *a, const void *b)
 {
     return *(const char *)a - *(const char *)b;
 }
 
-/* Human-readable grouping.
-   Returns a newline-separated printout of the groups. */
+/* Prints the groups directly, keeps main() short. */
 void groupAnagrams(char str[][MAX], int count)
 {
-    /* store sorted label -> for each, a list of original words */
-    char labels[count][MAX];
-    char groups[count][MAX][MAX];  /* [group][slot][word] */
-    int groupLen[count];
-    int groupCount = 0;
+    char signatures[count][MAX];
+    char buckets[count][MAX][MAX];
+    int sizes[count];
+    int groups = 0;
 
     for (int i = 0; i < count; i++)
     {
-        char sorted[MAX];
-        strcpy(sorted, str[i]);
-        qsort(sorted, strlen(sorted), sizeof(char), cmpChar);
+        char sig[MAX];
+        strcpy(sig, str[i]);
+        qsort(sig, strlen(sig), sizeof(char), cmpChar);
 
-        int found = -1;
-        for (int g = 0; g < groupCount; g++)
-        {
-            if (strcmp(labels[g], sorted) == 0)
+        int idx = -1;
+        for (int g = 0; g < groups; g++)
+            if (strcmp(signatures[g], sig) == 0)
             {
-                found = g;
+                idx = g;
                 break;
             }
-        }
 
-        if (found == -1)
+        if (idx == -1)
         {
-            groupCount++;
-            int g = groupCount - 1;
-            strcpy(labels[g], sorted);
-            groupLen[g] = 0;
-            found = g;
+            idx = groups;
+            groups++;
+            strcpy(signatures[idx], sig);
+            sizes[idx] = 0;
         }
 
-        strcpy(groups[found][groupLen[found]], str[i]);
-        groupLen[found]++;
+        strcpy(buckets[idx][sizes[idx]++], str[i]);
     }
 
-    for (int g = 0; g < groupCount; g++)
+    for (int g = 0; g < groups; g++)
     {
         printf("[");
-        for (int k = 0; k < groupLen[g]; k++)
+        for (int k = 0; k < sizes[g]; k++)
         {
-            printf("%s", groups[g][k]);
-            if (k < groupLen[g] - 1)
+            printf("%s", buckets[g][k]);
+            if (k + 1 < sizes[g])
                 printf(", ");
         }
         printf("]\n");
