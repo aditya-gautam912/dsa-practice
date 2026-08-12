@@ -1,36 +1,33 @@
 /*
- * LeetCode #11: Container With Most Water
- * Difficulty: Medium
+ * Container With Most Water (LeetCode #11, Medium)
  *
- * Human approach:
- * Imagine the tallest walls at both ends. The water is limited by the
- * shorter wall. So we start with the widest container (two ends), compute
- * the water, then move the shorter side inward hoping the next wall is
- * taller. We repeat and always remember the biggest amount of water.
+ * Two pointers from both ends. Water = shorter wall * gap.
+ * Why move the shorter side? Because the short wall is the one
+ * capping the water - moving the taller one can only shrink the gap
+ * without any hope of a taller limiting wall. Obvious once you
+ * think about it, but tripped me up on my first attempt.
  */
 
 #include <stdio.h>
 
-/* LeetCode solution. */
 int maxArea(int *height, int heightSize)
 {
-    int left = 0, right = heightSize - 1;
-    int maxWater = 0;
+    int lo = 0, hi = heightSize - 1;
+    int best = 0;
 
-    while (left < right)
+    while (lo < hi)
     {
-        int currentHeight = height[left] < height[right] ? height[left] : height[right];
-        int width = right - left;
-        int water = currentHeight * width;
-        if (water > maxWater)
-            maxWater = water;
+        int h = height[lo] < height[hi] ? height[lo] : height[hi];
+        int water = h * (hi - lo);
+        if (water > best)
+            best = water;
 
-        if (height[left] < height[right])
-            left++;
+        if (height[lo] < height[hi])
+            lo++;
         else
-            right--;
+            hi--;
     }
-    return maxWater;
+    return best;
 }
 
 int main(void)
@@ -38,7 +35,7 @@ int main(void)
     int h1[] = {1, 8, 6, 2, 5, 4, 8, 3, 7};
     int h2[] = {1, 1};
 
-    printf("Test 1: %d\n", maxArea(h1, 9)); /* 49 */
-    printf("Test 2: %d\n", maxArea(h2, 2)); /* 1 */
+    printf("%d (want 49)\n", maxArea(h1, 9));
+    printf("%d (want 1)\n", maxArea(h2, 2));
     return 0;
 }
