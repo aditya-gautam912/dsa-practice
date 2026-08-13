@@ -43,3 +43,4 @@ gcc solution.c -o solution
 | 73 | [Set Matrix Zeroes](problems/0073_set_matrix_zeroes/) | Medium | Array | [C](problems/0073_set_matrix_zeroes/solution.c) |
 | 75 | [Sort Colors](problems/0075_sort_colors/) | Medium | Array | [C](problems/0075_sort_colors/solution.c) |
 | 78 | [Subsets](problems/0078_subsets/) | Medium | Array | [C](problems/0078_subsets/solution.c) |
+| 79 | [Word Search](problems/0079_word_search/) | Medium | Backtracking | [C](problems/0079_word_search/solution.c) |
