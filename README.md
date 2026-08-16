@@ -25,6 +25,7 @@ gcc solution.c -o solution
 | 1 | [Two Sum](problems/0001_two_sum/) | Easy | Array | [C](problems/0001_two_sum/solution.c) |
 | 4 | [Median of Two Sorted Arrays](problems/0004_median_of_two_sorted_arrays/) | Hard | Array | [C](problems/0004_median_of_two_sorted_arrays/solution.c) |
 | 11 | [Container With Most Water](problems/0011_container_with_most_water/) | Medium | Array | [C](problems/0011_container_with_most_water/solution.c) |
+| 14 | [Longest Common Prefix](problems/0014_longest_common_prefix/) | Easy | Array | [C](problems/0014_longest_common_prefix/solution.c) |
 | 15 | [3Sum](problems/0015_3sum/) | Medium | Array | [C](problems/0015_3sum/solution.c) |
 | 16 | [3Sum Closest](problems/0016_3sum_closest/) | Medium | Array | [C](problems/0016_3sum_closest/solution.c) |
 | 26 | [Remove Duplicates from Sorted Array](problems/0026_remove_duplicates_from_sorted_array/) | Easy | Array | [C](problems/0026_remove_duplicates_from_sorted_array/solution.c) |
