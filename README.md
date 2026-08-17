@@ -28,6 +28,7 @@ gcc solution.c -o solution
 | 14 | [Longest Common Prefix](problems/0014_longest_common_prefix/) | Easy | Array | [C](problems/0014_longest_common_prefix/solution.c) |
 | 15 | [3Sum](problems/0015_3sum/) | Medium | Array | [C](problems/0015_3sum/solution.c) |
 | 16 | [3Sum Closest](problems/0016_3sum_closest/) | Medium | Array | [C](problems/0016_3sum_closest/solution.c) |
+| 18 | [4Sum](problems/0018_4sum/) | Medium | Array | [C](problems/0018_4sum/solution.c) |
 | 26 | [Remove Duplicates from Sorted Array](problems/0026_remove_duplicates_from_sorted_array/) | Easy | Array | [C](problems/0026_remove_duplicates_from_sorted_array/solution.c) |
 | 27 | [Remove Element](problems/0027_remove_element/) | Easy | Array | [C](problems/0027_remove_element/solution.c) |
 | 31 | [Next Permutation](problems/0031_next_permutation/) | Medium | Array | [C](problems/0031_next_permutation/solution.c) |
