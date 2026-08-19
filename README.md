@@ -35,6 +35,7 @@ gcc solution.c -o solution
 | 33 | [Search in Rotated Sorted Array](problems/0033_search_in_rotated_sorted_array/) | Medium | Array | [C](problems/0033_search_in_rotated_sorted_array/solution.c) |
 | 34 | [Find First and Last Position of Element in Sorted Array](problems/0034_find_first_and_last_position_of_element_in_sorted_array/) | Medium | Array | [C](problems/0034_find_first_and_last_position_of_element_in_sorted_array/solution.c) |
 | 35 | [Search Insert Position](problems/0035_search_insert_position/) | Easy | Array | [C](problems/0035_search_insert_position/solution.c) |
+| 36 | [Valid Sudoku](problems/0036_valid_sudoku/) | Medium | Array | [C](problems/0036_valid_sudoku/solution.c) |
 | 41 | [First Missing Positive](problems/0041_first_missing_positive/) | Hard | Array | [C](problems/0041_first_missing_positive/solution.c) |
 | 42 | [Trapping Rain Water](problems/0042_trapping_rain_water/) | Hard | Array | [C](problems/0042_trapping_rain_water/solution.c) |
 | 48 | [Rotate Image](problems/0048_rotate_image/) | Medium | Array | [C](problems/0048_rotate_image/solution.c) |
