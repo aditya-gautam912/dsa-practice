@@ -37,6 +37,7 @@ gcc solution.c -o solution
 | 35 | [Search Insert Position](problems/0035_search_insert_position/) | Easy | Array | [C](problems/0035_search_insert_position/solution.c) |
 | 36 | [Valid Sudoku](problems/0036_valid_sudoku/) | Medium | Array | [C](problems/0036_valid_sudoku/solution.c) |
 | 37 | [Sudoku Solver](problems/0037_sudoku_solver/) | Hard | Backtracking | [C](problems/0037_sudoku_solver/solution.c) |
+| 39 | [Combination Sum](problems/0039_combination_sum/) | Medium | Backtracking | [C](problems/0039_combination_sum/solution.c) |
 | 41 | [First Missing Positive](problems/0041_first_missing_positive/) | Hard | Array | [C](problems/0041_first_missing_positive/solution.c) |
 | 42 | [Trapping Rain Water](problems/0042_trapping_rain_water/) | Hard | Array | [C](problems/0042_trapping_rain_water/solution.c) |
 | 48 | [Rotate Image](problems/0048_rotate_image/) | Medium | Array | [C](problems/0048_rotate_image/solution.c) |
