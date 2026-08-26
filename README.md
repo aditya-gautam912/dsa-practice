@@ -42,6 +42,7 @@ gcc solution.c -o solution
 | 41 | [First Missing Positive](problems/0041_first_missing_positive/) | Hard | Array | [C](problems/0041_first_missing_positive/solution.c) |
 | 42 | [Trapping Rain Water](problems/0042_trapping_rain_water/) | Hard | Array | [C](problems/0042_trapping_rain_water/solution.c) |
 | 45 | [Jump Game II](problems/0045_jump_game_ii/) | Medium | Greedy | [C](problems/0045_jump_game_ii/solution.c) |
+| 46 | [Permutations](problems/0046_permutations/) | Medium | Backtracking | [C](problems/0046_permutations/solution.c) |
 | 48 | [Rotate Image](problems/0048_rotate_image/) | Medium | Array | [C](problems/0048_rotate_image/solution.c) |
 | 49 | [Group Anagrams](problems/0049_group_anagrams/) | Medium | Array | [C](problems/0049_group_anagrams/solution.c) |
 | 53 | [Maximum Subarray](problems/0053_maximum_subarray/) | Easy | Array | [C](problems/0053_maximum_subarray/solution.c) |
