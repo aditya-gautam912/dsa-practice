@@ -48,6 +48,7 @@ gcc solution.c -o solution
 | 49 | [Group Anagrams](problems/0049_group_anagrams/) | Medium | Array | [C](problems/0049_group_anagrams/solution.c) |
 | 51 | [N-Queens](problems/0051_n_queens/) | Hard | Backtracking | [C](problems/0051_n_queens/solution.c) |
 | 53 | [Maximum Subarray](problems/0053_maximum_subarray/) | Easy | Array | [C](problems/0053_maximum_subarray/solution.c) |
+| 54 | [Spiral Matrix](problems/0054_spiral_matrix/) | Medium | Array | [C](problems/0054_spiral_matrix/solution.c) |
 | 56 | [Merge Intervals](problems/0056_merge_intervals/) | Medium | Array | [C](problems/0056_merge_intervals/solution.c) |
 | 66 | [Plus One](problems/0066_plus_one/) | Easy | Array | [C](problems/0066_plus_one/solution.c) |
 | 73 | [Set Matrix Zeroes](problems/0073_set_matrix_zeroes/) | Medium | Array | [C](problems/0073_set_matrix_zeroes/solution.c) |
