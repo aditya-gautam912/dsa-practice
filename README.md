@@ -51,6 +51,7 @@ gcc solution.c -o solution
 | 54 | [Spiral Matrix](problems/0054_spiral_matrix/) | Medium | Array | [C](problems/0054_spiral_matrix/solution.c) |
 | 55 | [Jump Game](problems/0055_jump_game/) | Medium | Greedy | [C](problems/0055_jump_game/solution.c) |
 | 56 | [Merge Intervals](problems/0056_merge_intervals/) | Medium | Array | [C](problems/0056_merge_intervals/solution.c) |
+| 57 | [Insert Interval](problems/0057_insert_interval/) | Medium | Array | [C](problems/0057_insert_interval/solution.c) |
 | 66 | [Plus One](problems/0066_plus_one/) | Easy | Array | [C](problems/0066_plus_one/solution.c) |
 | 73 | [Set Matrix Zeroes](problems/0073_set_matrix_zeroes/) | Medium | Array | [C](problems/0073_set_matrix_zeroes/solution.c) |
 | 75 | [Sort Colors](problems/0075_sort_colors/) | Medium | Array | [C](problems/0075_sort_colors/solution.c) |
