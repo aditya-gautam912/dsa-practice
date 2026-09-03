@@ -1,0 +1,18 @@
+# Spiral Matrix II
+
+**LeetCode #59** | Difficulty: Medium
+
+## Problem
+
+Given a positive integer `n`, generate an `n x n` matrix filled with elements from `1` to `n²` in spiral order (clockwise).
+
+### Example
+
+```
+Input: n = 3
+Output: [[1,2,3],[8,9,4],[7,6,5]]
+```
+
+### Constraints
+
+- `1 <= n <= 20`
