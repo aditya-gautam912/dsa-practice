@@ -55,6 +55,7 @@ gcc solution.c -o solution
 | 63 | [Unique Paths II](problems/0063_unique_paths_ii/) | Medium | Array | [C](problems/0063_unique_paths_ii/solution.c) |
 | 64 | [Minimum Path Sum](problems/0064_minimum_path_sum/) | Medium | Array | [C](problems/0064_minimum_path_sum/solution.c) |
 | 66 | [Plus One](problems/0066_plus_one/) | Easy | Array | [C](problems/0066_plus_one/solution.c) |
+| 68 | [Text Justification](problems/0068_text_justification/) | Hard | Array | [C](problems/0068_text_justification/solution.c) |
 | 73 | [Set Matrix Zeroes](problems/0073_set_matrix_zeroes/) | Medium | Array | [C](problems/0073_set_matrix_zeroes/solution.c) |
 | 75 | [Sort Colors](problems/0075_sort_colors/) | Medium | Array | [C](problems/0075_sort_colors/solution.c) |
 | 78 | [Subsets](problems/0078_subsets/) | Medium | Array | [C](problems/0078_subsets/solution.c) |
