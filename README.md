@@ -57,6 +57,7 @@ gcc solution.c -o solution
 | 66 | [Plus One](problems/0066_plus_one/) | Easy | Array | [C](problems/0066_plus_one/solution.c) |
 | 68 | [Text Justification](problems/0068_text_justification/) | Hard | Array | [C](problems/0068_text_justification/solution.c) |
 | 73 | [Set Matrix Zeroes](problems/0073_set_matrix_zeroes/) | Medium | Array | [C](problems/0073_set_matrix_zeroes/solution.c) |
+| 74 | [Search a 2D Matrix](problems/0074_search_a_2d_matrix/) | Medium | Array | [C](problems/0074_search_a_2d_matrix/solution.c) |
 | 75 | [Sort Colors](problems/0075_sort_colors/) | Medium | Array | [C](problems/0075_sort_colors/solution.c) |
 | 78 | [Subsets](problems/0078_subsets/) | Medium | Array | [C](problems/0078_subsets/solution.c) |
 | 79 | [Word Search](problems/0079_word_search/) | Medium | Backtracking | [C](problems/0079_word_search/solution.c) |
