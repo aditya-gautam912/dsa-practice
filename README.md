@@ -61,4 +61,5 @@ gcc solution.c -o solution
 | 75 | [Sort Colors](problems/0075_sort_colors/) | Medium | Array | [C](problems/0075_sort_colors/solution.c) |
 | 78 | [Subsets](problems/0078_subsets/) | Medium | Array | [C](problems/0078_subsets/solution.c) |
 | 79 | [Word Search](problems/0079_word_search/) | Medium | Backtracking | [C](problems/0079_word_search/solution.c) |
+| 80 | [Remove Duplicates from Sorted Array II](problems/0080_remove_duplicates_sorted_array_ii/) | Medium | Array | [C](problems/0080_remove_duplicates_sorted_array_ii/solution.c) |
 | 84 | [Largest Rectangle in Histogram](problems/0084_largest_rectangle_in_histogram/) | Hard | Stack | [C](problems/0084_largest_rectangle_in_histogram/solution.c) |
