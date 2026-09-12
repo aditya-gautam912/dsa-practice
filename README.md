@@ -64,3 +64,4 @@ gcc solution.c -o solution
 | 80 | [Remove Duplicates from Sorted Array II](problems/0080_remove_duplicates_sorted_array_ii/) | Medium | Array | [C](problems/0080_remove_duplicates_sorted_array_ii/solution.c) |
 | 81 | [Search in Rotated Sorted Array II](problems/0081_search_rotated_sorted_array_ii/) | Medium | Array | [C](problems/0081_search_rotated_sorted_array_ii/solution.c) |
 | 84 | [Largest Rectangle in Histogram](problems/0084_largest_rectangle_in_histogram/) | Hard | Stack | [C](problems/0084_largest_rectangle_in_histogram/solution.c) |
+| 85 | [Maximal Rectangle](problems/0085_maximal_rectangle/) | Hard | Array | [C](problems/0085_maximal_rectangle/solution.c) |
