@@ -67,3 +67,4 @@ gcc solution.c -o solution
 | 85 | [Maximal Rectangle](problems/0085_maximal_rectangle/) | Hard | Array | [C](problems/0085_maximal_rectangle/solution.c) |
 | 88 | [Merge Sorted Array](problems/0088_merge_sorted_array/) | Easy | Array | [C](problems/0088_merge_sorted_array/solution.c) |
 | 90 | [Subsets II](problems/0090_subsets_ii/) | Medium | Array | [C](problems/0090_subsets_ii/solution.c) |
+| 105 | [Construct Binary Tree from Preorder and Inorder Traversal](problems/0105_construct_binary_tree_from_preorder_and_inorder_traversal/) | Medium | Array | [C](problems/0105_construct_binary_tree_from_preorder_and_inorder_traversal/solution.c) |
