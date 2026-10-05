@@ -69,3 +69,4 @@ gcc solution.c -o solution
 | 90 | [Subsets II](problems/0090_subsets_ii/) | Medium | Array | [C](problems/0090_subsets_ii/solution.c) |
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](problems/0105_construct_binary_tree_from_preorder_and_inorder_traversal/) | Medium | Array | [C](problems/0105_construct_binary_tree_from_preorder_and_inorder_traversal/solution.c) |
 | 106 | [Construct Binary Tree from Inorder and Postorder Traversal](problems/0106_construct_binary_tree_from_inorder_and_postorder_traversal/) | Medium | Array | [C](problems/0106_construct_binary_tree_from_inorder_and_postorder_traversal/solution.c) |
+| 108 | [Convert Sorted Array to Binary Search Tree](problems/0108_convert_sorted_array_to_bst/) | Easy | Array | [C](problems/0108_convert_sorted_array_to_bst/solution.c) |
