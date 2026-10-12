@@ -71,3 +71,4 @@ gcc solution.c -o solution
 | 106 | [Construct Binary Tree from Inorder and Postorder Traversal](problems/0106_construct_binary_tree_from_inorder_and_postorder_traversal/) | Medium | Array | [C](problems/0106_construct_binary_tree_from_inorder_and_postorder_traversal/solution.c) |
 | 108 | [Convert Sorted Array to Binary Search Tree](problems/0108_convert_sorted_array_to_bst/) | Easy | Array | [C](problems/0108_convert_sorted_array_to_bst/solution.c) |
 | 118 | [Pascal's Triangle](problems/0118_pascals_triangle/) | Easy | Array | [C](problems/0118_pascals_triangle/solution.c) |
+| 119 | [Pascal's Triangle II](problems/0119_pascals_triangle_ii/) | Easy | Array | [C](problems/0119_pascals_triangle_ii/solution.c) |
