@@ -73,3 +73,4 @@ gcc solution.c -o solution
 | 118 | [Pascal's Triangle](problems/0118_pascals_triangle/) | Easy | Array | [C](problems/0118_pascals_triangle/solution.c) |
 | 119 | [Pascal's Triangle II](problems/0119_pascals_triangle_ii/) | Easy | Array | [C](problems/0119_pascals_triangle_ii/solution.c) |
 | 120 | [Triangle](problems/0120_triangle/) | Medium | Array | [C](problems/0120_triangle/solution.c) |
+| 121 | [Best Time to Buy and Sell Stock](problems/0121_best_time_to_buy_and_sell_stock/) | Easy | Array | [C](problems/0121_best_time_to_buy_and_sell_stock/solution.c) |
