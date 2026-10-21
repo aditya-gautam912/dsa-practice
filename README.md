@@ -76,3 +76,4 @@ gcc solution.c -o solution
 | 121 | [Best Time to Buy and Sell Stock](problems/0121_best_time_to_buy_and_sell_stock/) | Easy | Array | [C](problems/0121_best_time_to_buy_and_sell_stock/solution.c) |
 | 122 | [Best Time to Buy and Sell Stock II](problems/0122_best_time_to_buy_and_sell_stock_ii/) | Medium | Array | [C](problems/0122_best_time_to_buy_and_sell_stock_ii/solution.c) |
 | 123 | [Best Time to Buy and Sell Stock III](problems/0123_best_time_to_buy_and_sell_stock_iii/) | Hard | Array | [C](problems/0123_best_time_to_buy_and_sell_stock_iii/solution.c) |
+| 128 | [Longest Consecutive Sequence](problems/0128_longest_consecutive_sequence/) | Medium | Array | [C](problems/0128_longest_consecutive_sequence/solution.c) |
