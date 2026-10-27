@@ -78,3 +78,4 @@ gcc solution.c -o solution
 | 123 | [Best Time to Buy and Sell Stock III](problems/0123_best_time_to_buy_and_sell_stock_iii/) | Hard | Array | [C](problems/0123_best_time_to_buy_and_sell_stock_iii/solution.c) |
 | 128 | [Longest Consecutive Sequence](problems/0128_longest_consecutive_sequence/) | Medium | Array | [C](problems/0128_longest_consecutive_sequence/solution.c) |
 | 130 | [Surrounded Regions](problems/0130_surrounded_regions/) | Medium | Array | [C](problems/0130_surrounded_regions/solution.c) |
+| 134 | [Gas Station](problems/0134_gas_station/) | Medium | Greedy | [C](problems/0134_gas_station/solution.c) |
