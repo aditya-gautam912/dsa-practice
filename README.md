@@ -79,4 +79,4 @@ gcc solution.c -o solution
 | 128 | [Longest Consecutive Sequence](problems/0128_longest_consecutive_sequence/) | Medium | Array | [C](problems/0128_longest_consecutive_sequence/solution.c) |
 | 130 | [Surrounded Regions](problems/0130_surrounded_regions/) | Medium | Array | [C](problems/0130_surrounded_regions/solution.c) |
 | 134 | [Gas Station](problems/0134_gas_station/) | Medium | Greedy | [C](problems/0134_gas_station/solution.c) |
-| 135 | [Candy](problems/0135_candy/) | Hard | Greedy | [C](problems/0135_candy/solution.c) |
+| 135 | [Candy](problems/0135_candy/) | Hard | Greedy | [C](problems/0135_candy/solution.c) |`n| 136 | [Single Number](problems/0136_single_number/) | Easy | Array | [C](problems/0136_single_number/solution.c) |
