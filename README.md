@@ -81,4 +81,5 @@ gcc solution.c -o solution
 | 134 | [Gas Station](problems/0134_gas_station/) | Medium | Greedy | [C](problems/0134_gas_station/solution.c) |
 | 135 | [Candy](problems/0135_candy/) | Hard | Greedy | [C](problems/0135_candy/solution.c) |
 | 136 | [Single Number](problems/0136_single_number/) | Easy | Array | [C](problems/0136_single_number/solution.c) |
+| 137 | [Single Number II](problems/0137_single_number_ii/) | Medium | Array | [C](problems/0137_single_number_ii/solution.c) |
 

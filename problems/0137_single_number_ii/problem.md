@@ -1,0 +1,29 @@
+# Single Number II
+
+**LeetCode #137** | Difficulty: Medium
+
+## Problem
+
+Given an integer array `nums` where every element appears **three times** except for one element, which appears exactly once. Find and return the single element.
+
+You must implement a solution with linear runtime complexity and use only constant extra space.
+
+### Examples
+
+**Example 1:**
+```
+Input: nums = [2,2,3,2]
+Output: 3
+```
+
+**Example 2:**
+```
+Input: nums = [0,1,0,1,0,1,99]
+Output: 99
+```
+
+### Constraints
+
+- `1 <= nums.length <= 3 * 10^4`
+- `-2^31 <= nums[i] <= 2^31 - 1`
+- Every element appears exactly three times except one element, which appears once.
