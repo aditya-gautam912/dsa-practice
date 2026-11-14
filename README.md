@@ -82,4 +82,5 @@ gcc solution.c -o solution
 | 135 | [Candy](problems/0135_candy/) | Hard | Greedy | [C](problems/0135_candy/solution.c) |
 | 136 | [Single Number](problems/0136_single_number/) | Easy | Array | [C](problems/0136_single_number/solution.c) |
 | 137 | [Single Number II](problems/0137_single_number_ii/) | Medium | Array | [C](problems/0137_single_number_ii/solution.c) |
+| 139 | [Word Break II](problems/0139_word_break_ii/) | Hard | Array | [C](problems/0139_word_break_ii/solution.c) |
 
